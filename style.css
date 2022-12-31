@@ -60,7 +60,7 @@ main{
 }
 
 #menu{
-    width: 10%;
+    width: 10vw;
     min-height: 100vh;
     background-color: rgb(21,32,43);
     padding-top: 20px;
@@ -85,7 +85,7 @@ a:link, a:visited, a:active {
 }
 
 article{
-    width: 70%;
+    width: 70vw;
     padding: 50px;
 }
 
