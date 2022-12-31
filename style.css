@@ -42,42 +42,20 @@ nav{
     background-color: rgb(13,23,33);
     color: #f1f1f1;
     display: flex;
-    justify-content: center;
-
+    justify-content: left;
+    flex-wrap: wrap;
 }
-nav>div{
-    padding: 10px;
+.menu-item{
     font-size: 26px;
     font-family: 'Source Sans Pro', sans-serif;
-    font-family: "Segoe UI",Arial,sans-serif;
     font-weight: 400;
-    color: #ddd!important
-}
-
-main{
-    display: flex;
-    flex-wrap:nowrap;
-}
-
-#menu{
-    width: 10vw;
-    min-height: 100vh;
-    background-color: rgb(21,32,43);
-    padding-top: 20px;
+    color: #ddd!important;
+    width: 15%;
+    padding: 10px;
 }
 
 a:link, a:visited, a:active {
     text-decoration:none;
-    
-}
-
-.menu-item{
-    display: flex;
-    align-items: center;
-    height: 50px;
-    font-size: 20px;
-    color: #ccc;
-    padding-left: 20px;
 }
 
 .active{
@@ -85,7 +63,6 @@ a:link, a:visited, a:active {
 }
 
 article{
-    width: 70vw;
     padding: 50px;
 }
 
