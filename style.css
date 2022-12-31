@@ -55,7 +55,38 @@ nav>div{
 }
 
 main{
-    padding: 30px 20px 0px 30px;
+    display: flex;
+    flex-wrap:nowrap;
+}
+
+#menu{
+    width: 10%;
+    min-height: 100vh;
+    background-color: rgb(21,32,43);
+    padding-top: 20px;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    
+}
+
+.menu-item{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-size: 20px;
+    color: #ccc;
+    padding-left: 20px;
+}
+
+.active{
+    background-color: #04AA6D!important;;
+}
+
+article{
+    width: 70%;
+    padding: 50px;
 }
 
 .code-box{
@@ -102,4 +133,8 @@ section{
 
 .variable{
     color:#e66a4b;
+}
+
+.consola{
+    color: #38444d;
 }
