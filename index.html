@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="./images/programming.png" alt="programming">
+        </div>
+        <nav>
+            <h1>File System</h1>
+        </nav>
+    </header>
+    <main>
+        
+        <section>
+            <h2>Leer un archivo</h2>
+            <br>
+            <div class="code-box">
+                <div class="code">
+                    <code>
+                        <p>
+                        <span class="variable">fs</span>
+                        <span class="puntuation">=</span>
+                        <span class="keyword">require</span>
+                        <span class="puntuation">(</span>
+                        <span class="string">'fs'</span>
+                        <span class="puntuation">)</span>
+                        <br><br>
+                        <span class="variable">fs</span>
+                        <span class="puntuation">.</span>
+                        <span class="function">readFile</span>
+                        <span class="puntuation">(</span>
+                        <span class="string">'./file'</span>
+                        <span class="puntuation">,</span>
+                        <span class="string">'utf-8'</span>
+                        <span class="puntuation">,</span>
+                        <span class="puntuation">(</span>
+                        <span class="variable">error</span>
+                        <span class="puntuation">,</span>
+                        <span class="variable">data</span>
+                        <span class="puntuation">)</span>
+                        <span class="puntuation">=> {</span>
+                        <br>
+                        <span>&nbsp; &nbsp;&nbsp;&nbsp;</span>
+                        <span class="keyword">if</span>
+                        <span>(</span>
+                        <span class="variable">error</span>
+                        <span>){</span>
+                        <br>
+                        <span>&nbsp; &nbsp;&nbsp;&nbsp;</span>
+                        <span>&nbsp; &nbsp;&nbsp;&nbsp;</span>
+                        <span class="keyword">  throw</span>
+                        <span class="variable">error</span>
+                        <br>
+                        <span>&nbsp; &nbsp;&nbsp;&nbsp;</span>
+                        <span>}</span>
+                        <br>
+                        <span>})</span>                        
+                        </p>
+                    </code>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Escribir un archivo</h2>
+            <br>
+            <div class="code-box">
+                <div class="code">
+                    <code>
+                        <p>
+                        <span class="variable">fs</span>
+                        <span class="puntuation">=</span>
+                        <span class="keyword">require</span>
+                        <span class="puntuation">(</span>
+                        <span class="string">'fs'</span>
+                        <span class="puntuation">)</span>
+                        <br><br>
+                        <span class="variable">fs</span>
+                        <span class="puntuation">.</span>
+                        <span class="function">writeFile</span>
+                        <span class="puntuation">(</span>
+                        <span class="string">'./file'</span>
+                        <span class="puntuation">,</span>
+                        <span class="variable">contenido</span>
+                        <span class="puntuation">,</span>
+                        <span class="puntuation">(</span>
+                        <span class="variable">error</span>
+                        <span class="puntuation">)</span>
+                        <span class="puntuation">=> {</span>
+                        <br>
+                        <span>&nbsp; &nbsp;&nbsp;&nbsp;</span>
+                        <span class="keyword">if</span>
+                        <span>(</span>
+                        <span class="variable">error</span>
+                        <span>){</span>
+                        <br>
+                        <span>&nbsp; &nbsp;&nbsp;&nbsp;</span>
+                        <span>&nbsp; &nbsp;&nbsp;&nbsp;</span>
+                        <span class="keyword">  throw</span>
+                        <span class="variable">error</span>
+                        <br>
+                        <span>&nbsp; &nbsp;&nbsp;&nbsp;</span>
+                        <span>}</span>
+                        <br>
+                        <span>})</span>                        
+                        </p>
+                    </code>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Eliminar un archivo</h2>
+            <br>
+            <div class="code-box">
+                <div class="code">
+                    <code>
+                        <p>
+                        <span class="variable">fs</span>
+                        <span class="puntuation">=</span>
+                        <span class="keyword">require</span>
+                        <span class="puntuation">(</span>
+                        <span class="string">'fs'</span>
+                        <span class="puntuation">)</span>
+                        <br><br>
+                        <span class="variable">fs</span>
+                        <span class="puntuation">.</span>
+                        <span class="function">unlink</span>
+                        <span class="puntuation">(</span>
+                        <span class="string">'./file'</span>
+                        <span class="puntuation">,</span>
+                        <span class="puntuation">(</span>
+                        <span class="variable">error</span>
+                        <span class="puntuation">)</span>
+                        <span class="puntuation">=> {</span>
+                        <br>
+                        <span>&nbsp; &nbsp;&nbsp;&nbsp;</span>
+                        <span class="keyword">if</span>
+                        <span>(</span>
+                        <span class="variable">error</span>
+                        <span>){</span>
+                        <br>
+                        <span>&nbsp; &nbsp;&nbsp;&nbsp;</span>
+                        <span>&nbsp; &nbsp;&nbsp;&nbsp;</span>
+                        <span class="keyword">  throw</span>
+                        <span class="variable">error</span>
+                        <br>
+                        <span>&nbsp; &nbsp;&nbsp;&nbsp;</span>
+                        <span>}</span>
+                        <br>
+                        <span>})</span>                        
+                        </p>
+                    </code>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Agregar contenido a un archivo</h2>
+            <br>
+            <div class="code-box">
+                <div class="code">
+                    <code>
+                        <p>
+                        <span class="variable">fs</span>
+                        <span class="puntuation">=</span>
+                        <span class="keyword">require</span>
+                        <span class="puntuation">(</span>
+                        <span class="string">'fs'</span>
+                        <span class="puntuation">)</span>
+                        <br><br>
+                        <span class="variable">fs</span>
+                        <span class="puntuation">.</span>
+                        <span class="function">appendFile</span>
+                        <span class="puntuation">(</span>
+                        <span class="string">'./file'</span>
+                        <span class="puntuation">,</span>
+                        <span class="variable">contenido</span>
+                        <span class="puntuation">,</span>
+                        <span class="puntuation">(</span>
+                        <span class="variable">error</span>
+                        <span class="puntuation">)</span>
+                        <span class="puntuation">=> {</span>
+                        <br>
+                        <span>&nbsp; &nbsp;&nbsp;&nbsp;</span>
+                        <span class="keyword">if</span>
+                        <span>(</span>
+                        <span class="variable">error</span>
+                        <span>){</span>
+                        <br>
+                        <span>&nbsp; &nbsp;&nbsp;&nbsp;</span>
+                        <span>&nbsp; &nbsp;&nbsp;&nbsp;</span>
+                        <span class="keyword">  throw</span>
+                        <span class="variable">error</span>
+                        <br>
+                        <span>&nbsp; &nbsp;&nbsp;&nbsp;</span>
+                        <span>}</span>
+                        <br>
+                        <span>})</span>                        
+                        </p>
+                    </code>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Renombrar un archivo</h2>
+            <br>
+            <div class="code-box">
+                <div class="code">
+                    <code>
+                        <p>
+                        <span class="variable">fs</span>
+                        <span class="puntuation">=</span>
+                        <span class="keyword">require</span>
+                        <span class="puntuation">(</span>
+                        <span class="string">'fs'</span>
+                        <span class="puntuation">)</span>
+                        <br><br>
+                        <span class="variable">fs</span>
+                        <span class="puntuation">.</span>
+                        <span class="function">rename</span>
+                        <span class="puntuation">(</span>
+                        <span class="string">'./file'</span>
+                        <span class="puntuation">,</span>
+                        <span class="string">'/.new_name'</span>
+                        <span class="puntuation">,</span>
+                        <span class="puntuation">(</span>
+                        <span class="variable">error</span>
+                        <span class="puntuation">)</span>
+                        <span class="puntuation">=> {</span>
+                        <br>
+                        <span>&nbsp; &nbsp;&nbsp;&nbsp;</span>
+                        <span class="keyword">if</span>
+                        <span>(</span>
+                        <span class="variable">error</span>
+                        <span>){</span>
+                        <br>
+                        <span>&nbsp; &nbsp;&nbsp;&nbsp;</span>
+                        <span>&nbsp; &nbsp;&nbsp;&nbsp;</span>
+                        <span class="keyword">  throw</span>
+                        <span class="variable">error</span>
+                        <br>
+                        <span>&nbsp; &nbsp;&nbsp;&nbsp;</span>
+                        <span>}</span>
+                        <br>
+                        <span>})</span>                        
+                        </p>
+                    </code>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+</body>
+</html>

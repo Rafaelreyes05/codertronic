@@ -1,0 +1,105 @@
+*{
+    margin: 0%;
+}
+
+body{
+    background-color: #1d2a35!important;
+    width: 100%;
+    color: #f1f1f1;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+}
+
+#logo{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#logo>img{
+    width: 10%;
+    height: auto;
+}
+
+h1{
+    
+    font-weight: 400;
+    font-size: 42px;
+    color: #ddd!important;
+    margin: 5px;
+}
+
+h2{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: #ddd!important
+}
+
+nav{
+    background-color: rgb(13,23,33);
+    color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+
+}
+nav>div{
+    padding: 10px;
+    font-size: 26px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    color: #ddd!important
+}
+
+main{
+    padding: 30px 20px 0px 30px;
+}
+
+.code-box{
+    background-color: #38444d;
+    padding: 30px;
+}
+
+.code-title{
+    margin: 5px;
+    font-size: 26px;
+}
+
+.code{
+    background-color: rgb(21,32,43);
+    font-size: 1.5rem;
+    padding: 10px;
+    
+}
+
+section{
+    border-bottom: 1px solid white;
+    padding: 20px ;
+}
+
+.keyword{
+    color: #66d9ef;
+}
+
+.puntuation,.variable{
+    color: #f8f8f2;
+}
+
+.function{
+    color: #e6db74;
+}
+
+.string{
+    color: #a6e22e;
+}
+
+.number{
+    color:#ae81ff;
+}
+
+.variable{
+    color:#e66a4b;
+}
